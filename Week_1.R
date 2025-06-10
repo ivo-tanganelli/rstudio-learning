@@ -60,6 +60,26 @@ m
 #09/06/2025 9:45 End of session
 #R Data Types: Factors
 
+# categorial as male and female or ordered in a rank intern, analyst, assoc, vp etc
+
+
+#Factor example
+x<- factor(c("yes","yes","no","yes","no","yes")) # here c() is used to concatenate arguments into a single vector
+x
+
+
+table(x) # this is here to show how many of each levels there are in my vector
+x
+
+unclass(x) # here it indicates as a number yes and no 
+
+# when doing linear modeling it is important to define what is the baseline model, thus we can indicate the levels
+
+x<- factor(c("hi","hello","hi","hi","hello","hello"),
+           levels = c("hi","hello")) # the levels in R are created in alphabetical order if you dont say what is the order
+
+x
+
 
 
 
