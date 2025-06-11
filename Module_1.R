@@ -167,11 +167,44 @@
 
 
 ##Subsetting - lists
+# 
+# x <- list(foo = 1:4, bar = 0.6)
+# #x
+# x[1]
+# 
+# x[[1]]
+# 
+# x$bar
+# 
+# x[["bar"]]
+# 
+# x["bar"]
+# 
 
+# x <- list(foo = 1:4, bar = 0.6, baz = "hello")
+# 
+# x[c(1,3)]
 
+##Subsetting a matrix
 
+# x<- matrix(1:9, 3, 3)
+# x[1,2]
+# 
+# x [2,1]
+# 
+# x[1,1]
+# 
 
+# x <- c(1,2,NA,4,5)
+# x                    #here i take the vector that has na values and return only the values 
+# bad <- is.na(x)
+# x[!bad]
 
+# x <- c(1,2,NA,4, NA,5)
+# y <- c("a", "b", NA, "d", NA, "f")
+# good <- complete.cases(x,y)
+
+##vectorized operations
 
 
 
