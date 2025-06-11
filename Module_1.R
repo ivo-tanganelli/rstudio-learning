@@ -135,21 +135,38 @@
 # Reading Large Tables 10/06/2025
 
  
+#When reading large Datasets with read.table, using colClasses can make your code faster, 
+#in order to do this, you have to know the class of each column in your data frame
+#
 
 
 
+## Interfaces to the outside world
+
+##subsetting R objects
+
+# 
+# x<- c("a","b","c","c","d","a")
+# 
+# 
+# x[1]
+# 
+# x[2]
+# 
+# x[1:4]
+# 
+# x [x>"a"]
+# 
+# 
+# u <- x > "a"
+# u
+# 
+# x[u]
+# x
+# 
 
 
-
-
-
-
-
-
-
-
-
-
+##Subsetting - lists
 
 
 
